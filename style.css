@@ -1,0 +1,332 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+	font-size: 15px;
+}
+
+#container {
+	width: 80%;
+	position: relative;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#bettingPhase {
+	position: fixed;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#bettingPhase h2 {
+	font-size: 5em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 5px;
+}
+
+#bettingPhase #betTotal {
+	color: white;
+}
+
+#innerContainer {
+	background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+	height: 60vh;
+	border-radius: 50px;
+	border: 5px solid green;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#bettingPhase .betBtns {
+	height: 100px;
+	width: 20%;
+	font-size: 2.5em;
+	border-radius: 20px;
+	color: white;
+	border: none;
+	font-weight: 900;
+	background: linear-gradient(to right, #000000, #0f9b0f);
+}
+
+#confirmBtn {
+	height: 100px;
+	font-size: 2.5em;
+	border-radius: 20px;
+	color: black;
+	border: none;
+	font-weight: 900;
+	background: linear-gradient(to right, #fdfc47, #24fe41);
+	padding: 15px;
+}
+
+#confirmBtn:hover {
+	background: none;
+	border: 3px solid green;
+}
+
+#bettingPhase .betBtns:hover,
+.btnContainer button:hover {
+	background: black;
+}
+
+img {
+	position: absolute;
+	width: 150px;
+	right: 30px;
+}
+
+.cards {
+	position: relative;
+	text-align: center;
+}
+
+#playerCards .card2 {
+	right: -25px;
+}
+
+#compCards .card2 {
+	right: -25px;
+}
+
+#compCards .card3 {
+	right: -50px;
+}
+
+#compCards .card1 {
+	right: 0;
+}
+
+#playerCards .card3 {
+	right: -50px;
+}
+
+#playerCards .card3 img {
+	display: none;
+}
+#compCards .card3 img {
+	display: none;
+}
+
+#table {
+	width: 85%;
+	height: 30vh;
+	background-image: linear-gradient(to top, #15eb6e 0%, #12ca3a 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+	border: 5px solid white;
+}
+
+#computer {
+	width: 220px;
+	height: 230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#player {
+	width: 220px;
+	height: 230px;
+}
+
+#playerContainer,
+#compContainer {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#moneyContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 10vh;
+}
+
+#compMoneyContainer {
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#moneyContainer p,
+#compContainer p {
+	color: white;
+}
+
+#playerControls {
+	width: 40%;
+}
+
+.btnContainer {
+	height: 20vh;
+}
+
+.btnContainer button {
+	height: 50px;
+	width: 130px;
+	font-size: 1.1em;
+	border-radius: 20px;
+	color: white;
+	border: none;
+	font-weight: 400;
+	background: linear-gradient(to right, #000000, #0f9b0f);
+}
+
+#cancelBtn {
+	height: 100px;
+	font-size: 2.5em;
+	border-radius: 20px;
+	color: black;
+	border: none;
+	font-weight: 900;
+	padding: 15px;
+	background: linear-gradient(to right, #e9982f, rgb(230, 77, 6));
+	margin-top: 15px;
+}
+
+#cancelBtn:hover {
+	background: black;
+	color: red;
+}
+
+#topContainer {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#leftContainer p,
+#rightContainer p {
+	color: white;
+}
+
+#leftContainer,
+#rightContainer {
+	font-size: 1.2em;
+}
+
+#gameOver {
+	position: absolute;
+	left: 10;
+	right: 30;
+	top: 0;
+	bottom: 0;
+	background: url(images/GOBG.jpg);
+	background-size: cover;
+	background-position-y: -100px;
+	width: 120vw;
+	height: 100vh;
+	display: none;
+}
+
+#gameOver button {
+	color: white;
+	margin-top: 100px;
+	font-size: 3em;
+	font-weight: 900;
+	background: black;
+	padding: 15px;
+	border-radius: 20px;
+	border: none;
+}
+
+#gameOver button:hover {
+	color: black;
+	background: white;
+}
+
+#youWin {
+	position: absolute;
+	left: 10;
+	right: 30;
+	top: 0;
+	bottom: 0;
+	background: url(images/youWin.jpg);
+	background-size: cover;
+	background-position-y: -100px;
+	width: 120vw;
+	height: 100vh;
+	display: none;
+}
+
+#youWin button {
+	color: white;
+	margin-top: 100px;
+	font-size: 3em;
+	font-weight: 900;
+	background: black;
+	padding: 15px;
+	border-radius: 20px;
+	border: none;
+}
+
+#youWin button:hover {
+	color: black;
+	background: white;
+}
+
+#instructions {
+	position: absolute;
+	left: 10;
+	right: 30;
+	top: 0;
+	bottom: 0;
+	background: url(images/bg.jpg);
+	background-size: cover;
+	background-position-y: -100px;
+	width: 120vw;
+	height: 100vh;
+	display: block;
+}
+
+#insContainer button {
+	color: white;
+	margin-top: 25px;
+	font-size: 3em;
+	font-weight: 900;
+	background: black;
+	padding: 15px;
+	border-radius: 20px;
+	border: none;
+}
+
+#insContainer button:hover {
+	color: black;
+	background: white;
+}
+
+#mechanics {
+	width: 70%;
+	height: 50vh;
+	margin: 0 auto;
+	background: white;
+	line-height: 35px;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	font-size: 20px;
+	overflow: scroll;
+	text-align: left;
+	padding: 20px;
+}

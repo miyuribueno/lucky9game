@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="compContainer">
+            <div id="compMoneyContainer">
+                <p>0</p>
+                <h2>MONEY</h2>
+            </div>
+            <div id="computer">
+                <div id="compCards">
+                    <div class="cards card1"><img src="images/red_back.png" alt=""></div>
+                    <div class="cards card2"><img src="images/red_back.png" alt=""></div>
+                    <div class="cards card3"><img src="images/red_back.png" alt=""></div>
+                </div>
+            </div>
+                
+        </div>
+        <div id="table">
+            <div id="computerBet">
+                <h3>Computer Bet</h3>
+                <p>0</p>
+            </div>
+            <div id="collectedBets">
+                <h3>Total: 0</h3>
+            </div>
+            <div id="playerBet">
+                <p>0</p>
+                <h3>Player Bet</h3>
+            </div>
+        </div>
+        <div id="playerContainer">    
+            <div id="player">
+                <div id="playerCards">
+                    <div class="cards card1"><img src="images/red_back.png" alt=""></div>
+                    <div class="cards card2"><img src="images/red_back.png" alt=""></div>
+                    <div class="cards card3"><img src="images/red_back.png" alt=""></div>
+                </div>
+            </div>
+            <div id="playerControls">
+                <div id="moneyContainer">
+                    <h2>MONEY</h2>
+                    <p>0</p>
+                </div>
+                <div class="btnContainer">
+                    <button id='draw'>Draw Cards</button>
+                    <button id='hirit'>Hirit</button>
+                </div>
+            <div id="bettingPhase">
+                <div id="innerContainer">
+                    <div id="topContainer">
+                        <div id="leftContainer">
+                            <h3>Computer Money</h3>
+                            <p></p>
+                        </div>
+                        <h2>Place a Bet</h2>
+                        <div id="rightContainer">
+                            <h3>Player Money</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <h2 id="betTotal">0</h2>
+                    <div id="btnContainer2">
+                        <button class="betBtns">500</button>
+                        <button class="betBtns">1000</button>
+                        <button class="betBtns">2000</button>
+                        <button class="betBtns">5000</button>
+                        <button id="confirmBtn">Confirm</button>
+                        <button id="cancelBtn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameOver">
+        <div id="gameOverContainer">
+            <button id='tryAgain'>TRY AGAIN</button>
+        </div>
+    </div>
+    <div id="youWin">
+        <div id="youWinContainer">
+            <button id='playAgain'>YOU WIN! PLAY AGAIN</button>
+        </div>
+    </div>
+    <div id="instructions">
+        <div id="insContainer">
+            <div id="mechanics">
+                <p>Instructions:</p>
+                <p>
+                    The game is dealt like a regular Blackjack style structure where two cards are dealt to the player face up and two cards to the computer; one card face down and another card facing up. 
+                    Using the Baccarat numbering system, the object of the game is to have a hand higher than the opponent as close to 9 as possible.
+                    Individual cards are scored as follows:
+                    Aces (A) count as 1.
+                    Tens and face cards count as 0 (zero).
+                    2 through 9 are counted according to their numerical value.
+                    If the total of the cards is a two digit number, the last digit counts as the value of the hand (For Example: 8 + 5 = 13, the hand value is 3).
+
+                    Lucky 9 are a two-card total of 9 without any tens or face cards (Examples: Ace and 8, 2 and 7, 3 and 6, 4 and 5) and all pays 3 to 2.
+
+                    - Lucky 9 ties with a Natural 9 (a 9 plus any tens or face cards).
+                    - Lucky 9 win against all three-card totals of 9.
+                    - A winning Natural 9 pays even money and ties with any hand totals of 9.
+
+                    Players not dealt a Lucky 9 have the option to Hit a third card or Stand. The players are offered to Split pairs by making a wager equal to the amount of their original wager. 
+                    Players may split pairs up to three times for a total of four separate hands and will only receive one additional card per hand. 
+                    Goodluck and Enjoy!
+                </p>
+            </div>
+            <button id='start'>START</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
